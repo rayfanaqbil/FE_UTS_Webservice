@@ -12,7 +12,7 @@ function isiRow(value) {
             .replace("#Genre", value.genre)
             .replace("#Developer", value.developer)
             .replace("#Publisher", value.publisher)
-            .replace("#ReleaseYear", value.release_gityear)
+            .replace("#ReleaseYear", value.release_year)
             .replace("#Platform", value.platform)
             .replace("#Mode", value.mode)
             .replace("#Price", value.price)
