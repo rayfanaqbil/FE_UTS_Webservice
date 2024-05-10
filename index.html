@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayfan Game Data</title>
     <link rel="stylesheet" href="assets/boot/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type ="module" src="./assets/js/fetch.js"></script>
     <link rel="stylesheet" href="assets/css/master.css">
     <link rel="stylesheet" href="assets/css/output.css">
 </head>
@@ -195,13 +197,78 @@
                                 <div class="w-[70%] h-[.2rem] bg-white"></div>
                             </div>
                         </h4>
-                        <p class="my-1 w-[32%] text-center text-[1.1rem] font-font3 ">
-                    
-                        </p>
+                        <!-- Your table goes here -->
+                        <div class="relative overflow-x-auto shadow-md sm:rounded-lg" id="dataTable">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3">
+                                            Title
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Genre
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Developer
+                                        </th>
+                                        
+                                        <th scope="col" class="px-6 py-3">
+                                            Publisher
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Release Year
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Platform
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Mode
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Price
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Rating
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            #Title
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            #Genre
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #Developer
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #Publisher
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #ReleaseYear
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #Platform
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #Mode
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #Price
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            #Rating
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </article>
                 </section>
             </div>
         </div>
-    </main>
+</main>
 </body>
 </html>

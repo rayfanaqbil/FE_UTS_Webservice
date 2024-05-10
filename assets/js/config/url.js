@@ -1,0 +1,1 @@
+export let urlAPI ="https://uts-rayfan-2024-3e17b3bd197f.herokuapp.com/games";
