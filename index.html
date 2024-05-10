@@ -10,6 +10,8 @@
     <script type ="module" src="./assets/js/fetch.js"></script>
     <link rel="stylesheet" href="assets/css/master.css">
     <link rel="stylesheet" href="assets/css/output.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/serch.js"></script>
 </head>
 
 <body>
@@ -184,9 +186,9 @@
         <div class="w-[100%] bg-color3 flex justify-center" id="Table">
             <div class="md:container w-[100%]">
                 <section class="py-20">
-                    <article class="w-[100%] flex flex-wrap justify-center">
+                    <article class="w-[100%] flex flex-wrap justify-between">
                         <h4
-                            class="w-[100%] my-1 text-center text-[2rem] font-font5 font-bold flex justify-center items-center">
+                            class="w-full my-1 text-center text-[2rem] font-font5 font-bold flex justify-center items-center">
                             <div class="w-[7rem] h-[.8rem] mx-5 flex flex-wrap justify-end content-between">
                                 <div class="w-[100%] h-[.2rem] bg-white"></div>
                                 <div class="w-[70%] h-[.2rem] bg-white"></div>
@@ -197,7 +199,14 @@
                                 <div class="w-[70%] h-[.2rem] bg-white"></div>
                             </div>
                         </h4>
+                        <!-- Filter pencarian -->
+                        <div class="flex items-center mb-2">
+                            <input type="text" id="searchInput" placeholder="Search by title..." class="py-2 px-4 border rounded-md mr-2 bg-color1">
+                            <button onclick="getByTitle()" class="py-2 px-4 bg-blue-500 text-white rounded-md">Search</button>
+                        </div>
+                    </article>
                         <!-- Your table goes here -->
+                        
                         <div class="relative overflow-x-auto shadow-md sm:rounded-lg" id="dataTable">
                             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
